@@ -56,25 +56,64 @@
 </table>
 
 2. Đánh giá mức độ phức tạp và công sức làm sạch
-<table><thead><tr><th><span class="">Tiêu chí</span></th><th><span class="">Có cấu trúc (Excel)</span></th><th><span class="">Bán cấu trúc (XML/JSON)</span></th><th><span class="">Phi cấu trúc (PDF scan, Email, Ảnh)</span></th></tr></thead><tbody><tr><td><span class="">% thời gian ước tính cho làm sạch</span></td><td><span class="">20%</span></td><td><span class="">45-50%</span></td><td><span class="">70-80%</span></td></tr><tr><td><span class="">Công cụ/công nghệ cần thiết</span></td><td><span class="">Excel, Pandas, OpenRefine</span></td><td><span class="">xml.etree, json, BeautifulSoup</span></td><td><span class="">OCR (Tesseract, PaddleOCR), OpenCV, NLP</span></td></tr><tr><td><span class="">Rủi ro chính</span></td><td><span class="">Sai định dạng, ô trống, trùng</span></td><td><span class="">Thiếu tag/key, cú pháp sai, kiểu không nhất quán</span></td><td><span class="">OCR sai, chất lượng ảnh kém, văn bản phức tạp</span></td></tr><tr><td><span class="">Phương pháp xử lý điển hình</span></td><td><span class="">- Kiểm tra null, điền mean/mode</span><br><span class="">- Chuẩn hóa kiểu</span><br><span class="">- Xóa trùng</span><br><span class="">- Regex</span></td><td><span class="">- Parse cẩn thận bắt lỗi</span><br><span class="">- Kiểm tra key tồn tại</span><br><span class="">- Validation schema</span><br><span class="">- Gán default</span></td><td><span class="">- Tiền xử lý ảnh (grayscale, threshold, xoay)</span><br><span class="">- OCR + hậu xử lý (sửa chính tả)</span><br><span class="">- Tokenization, bỏ stopwords</span></td></tr></tbody></table>  
+<table><thead><tr><th><span class="">Tiêu chí</span></th><th><span class="">Có cấu trúc (Excel)</span></th><th><span class="">Bán cấu trúc (XML/JSON)</span></th><th><span class="">Phi cấu trúc (PDF scan, Email, Ảnh)</span></th></tr></thead><tbody><tr><td><span class="">% thời gian ước tính cho làm sạch</span></td><td><span class="">20%</span></td><td><span class="">45-50%</span></td><td><span class="">70-80%</span></td></tr><tr><td><span class="">Công cụ/công nghệ cần thiết</span></td><td><span class="">Excel, Pandas</span></td><td><span class="">xml.etree, json</span></td><td><span class="">OCR, OpenCV, NLP</span></td></tr><tr><td><span class="">Rủi ro chính</span></td><td><span class="">Sai định dạng, ô trống, trùng</span></td><td><span class="">Thiếu tag/key, cú pháp sai, kiểu không nhất quán</span></td><td><span class="">OCR sai, chất lượng ảnh kém, văn bản phức tạp</span></td></tr><tr><td><span class="">Phương pháp xử lý điển hình</span></td><td><span class="">- Kiểm tra null, điền mean/mode</span><br><span class="">- Chuẩn hóa kiểu</span><br><span class="">- Xóa trùng</span><br><span class="">- Regex</span></td><td><span class="">- Parse cẩn thận bắt lỗi</span><br><span class="">- Kiểm tra key tồn tại</span><br><span class="">- Validation schema</span><br><span class="">- Gán default</span></td><td><span class="">- Tiền xử lý ảnh (grayscale, threshold, xoay)</span><br><span class="">- OCR + hậu xử lý (sửa chính tả)</span><br><span class="">- Tokenization, bỏ stopwords</span></td></tr></tbody></table>  
 
 3. Bản Đồ Vòng Đời Dự Án AI (8 Bước Tiêu Chuẩn)
 
-- Bước 1: Xác định mục tiêu (Problem Formulation)**
-   * Xác định rõ bài toán kinh doanh (ví dụ: tự động hóa đọc hợp đồng scan để giảm 90% thời gian nhập liệu thủ công).
-- Bước 2: Thu thập & Tích hợp dữ liệu (Data Acquisition)**
-   * Gom cả 6 nguồn dữ liệu (Excel, XML, PDF, Email, JSON, Ảnh) vào kho lưu trữ an toàn (Data Lake / Cloud Storage).
-- Bước 3: Khám phá & Kiểm kê dữ liệu (EDA - Exploratory Data Analysis)**
-   * Quét toàn bộ dữ liệu để đếm số lượng lỗi, kiểm tra độ phân bố và lập bảng thống kê trước khi can thiệp.
-- Bước 4: Tiền xử lý & Làm sạch (Data Preprocessing & Cleaning)**
-   * *Excel/JSON/XML:* Điền giá trị khuyết hợp lý, chuyển dạng phẳng.
-   * *Ảnh/Scan:* Khử nhiễu, xoay thẳng ảnh, cắt viền, trích xuất text qua OCR.
-   * *Email:* Tách từ, chuẩn hóa chính tả, loại bỏ từ rác.
-- Bước 5: Trích xuất đặc trưng (Feature Engineering)**
-   * Biến đổi dữ liệu sạch thành các ma trận số/vector đặc trưng mà thuật toán học máy có thể tính toán được.
-- Bước 6: Huấn luyện mô hình (Model Training)**
-   * Đưa dữ liệu vào huấn luyện các mô hình phù hợp: Hồi quy (dự đoán giá), NLP (phân loại email), Computer Vision (soi con dấu).
-- Bước 7: Đánh giá & Kiểm thử độc lập (Model Evaluation)**
-   * Kiểm tra độ chính xác của mô hình trên tập dữ liệu chưa từng thấy để tránh hiện tượng "học vẹt" (Overfitting).
-- Bước 8: Triển khai & Giám sát (Deployment & Monitoring)**
-   * Đóng gói mô hình thành dịch vụ API để ứng dụng thực tế gọi vào; theo dõi liên tục để phát hiện khi chất lượng ảnh/văn bản đời thực thay đổi (Data Drift).
+- Bước 1: Xác định mực tiêu kinh doanh  
+  * Xác định rõ bài toán cụ thể: Ví dụ: "Xây dựng hệ thống tự động trích xuất thông tin từ các nguồn dữ liệu hỗn hợp để tạo báo cáo tổng hợp, giảm 90% thời gian nhập liệu thủ công."
+  * Xác định tiêu chí thành công (KPI): Độ chính xác tối thiểu 85% trên tập kiểm tra, thời gian xử lý dưới 2 giây/record.
+- Bước 2: Thu thập dữ liệu  
+  * Gom tất cả nguồn dữ liệu từ các phòng ban vào một kho lưu trữ tập trung (ví dụ: thư mục dự án trên máy chủ hoặc trên Cloud).
+  * Thực hiện quản lý phiên bản dữ liệu (Data Versioning): Ghi rõ nhật ký (log) cho từng file bao gồm: ngày lấy, nguồn gốc, dung lượng, checksum (mã băm để kiểm tra file có bị sửa đổi sau này không). Ví dụ: bang_gia_20260827_v1.xlsx.
+  * Đảm bảo tuân thủ bảo mật và quyền riêng tư (ẩn danh thông tin khách hàng nếu có) trước khi đưa vào phân tích.
+- Bước 3: Khám phá dữ liệu & Kiểm kê dữ liệu  
+  * Sử dụng thư viện (Pandas, Plotly) để thực hiện thống kê mô tả toàn diện. Tính toán số lượng bản ghi, tỷ lệ giá trị thiếu (missing), tỷ lệ outlier.  
+  * Với văn bản và ảnh: Đếm số lượng file bị lỗi (không mở được, file rỗng, XML/JSON invalid).
+  * Lập bảng kiểm kê lỗi trước khi xử lý.
+- Bước 4: Tiền xử lý % Làm sạch dữ liệu  
+  * Đối với Excel (có cấu trúc):  
+    * Xử lý ô trống: Điền giá trị trung bình (mean) hoặc trung vị (median) nếu tỷ lệ thiếu < 5%. Nếu > 20%, cân nhắc xóa cột đó.
+    * Chuẩn hóa định dạng: Chuyển cột ngày tháng về chuẩn YYYY-MM-DD; chuyển cột giá về kiểu số, loại bỏ đơn vị tiền tệ (ví dụ: "10 triệu" -> 10000000).
+    * Xóa bản ghi trùng lặp dựa trên mã sản phẩm hoặc khóa chính.
+  * Đối với XML và JSON (bán cấu trúc):
+    * Parse file, bắt lỗi ngoại lệ (exception) cho các file sai cú pháp.
+    * Làm phẳng (flatten) dữ liệu lồng nhau: Chuyển các object lồng thành các cột riêng (ví dụ: customer.name -> cột customer_name).
+    * Xử lý key thiếu: Kiểm tra sự tồn tại của key trước khi truy cập; nếu thiếu, gán giá trị mặc định rỗng hoặc 0 và ghi log để kiểm tra sau.
+  * Đối với Ảnh và PDF Scan (phi cấu trúc):
+    * Tiền xử lý ảnh (OpenCV): Xoay ảnh thẳng (deskew), chuyển sang ảnh xám (grayscale), tăng độ tương phản (threshold), khử nhiễu để tối ưu cho OCR.
+    * Áp dụng OCR (Tesseract hoặc PaddleOCR) để chuyển ảnh thành văn bản.
+    * Hậu xử lý OCR: Sử dụng từ điển tiếng Việt hoặc mô hình sửa lỗi chính tả (VD: pySpellChecker) để sửa các từ bị đọc sai (ví dụ: "san pharn" -> "sản phẩm").
+  * Đối với Email (phi cấu trúc):
+    * Trích xuất phần body (nội dung), loại bỏ HTML tags, chữ ký email.
+    * Chuẩn hóa văn bản: Chuyển về chữ thường, loại bỏ ký tự đặc biệt, emoji, URL.
+    * Chuẩn hóa chính tả và viết tắt (ví dụ: "k" -> "không", "dc" -> "được").  
+Tất cả các bước sửa lỗi đều phải ghi log chi tiết (lỗi gì, sửa thành gì) để có thể đối chiếu và tái lập kết quả.
+- Bước 5: Trích xuất đặc trưng & Mã hóa dữ liệu  
+  Mục tiêu là chuyển đổi dữ liệu sạch thành các vector số mà thuật toán học máy có thể hiểu được.  
+  Chia dữ liệu thành các loại đặc trưng:  
+  * Đặc trưng định lượng (số): Chuẩn hóa về cùng tỷ lệ bằng StandardScaler hoặc MinMaxScaler (đặc biệt quan trọng cho các thuật toán như SVM, KNN, Neural Network).
+  * Đặc trưng định tính (phân loại): Mã hóa bằng One-Hot Encoding nếu ít giá trị, hoặc Label Encoding nếu là thứ bậc.
+  * Với dữ liệu văn bản (Email, OCR text): Áp dụng các kỹ thuật biểu diễn văn bản: Nếu dùng mô hình truyền thống, dùng TF-IDF hoặc Bag of Words. Nếu dùng mô hình deep learning, dùng PhoBERT hoặc các embedding đã được huấn luyện sẵn.
+  * Với dữ liệu ảnh (nếu cần nhận dạng khuôn dấu/chữ ký):
+  * Sử dụng các mô hình CNN pre-trained (ResNet, EfficientNet) để trích xuất vector đặc trưng của ảnh.
+- Bước 6: Chia dữ liệu & Huấn luyện mô hình  
+  * Chia dữ liệu: Tách tập dữ liệu thành 3 phần rõ ràng:
+    * Tập Huấn luyện (Train): 70% - dùng để học.
+    * Tập Xác thực (Validation): 15% - dùng để điều chỉnh siêu tham số.
+    * Tập Kiểm tra (Test): 15% - dùng để đánh giá cuối cùng (chỉ dùng 1 lần duy nhất).
+  * Huấn luyện mô hình cơ sở (Baseline): Bắt đầu với các mô hình đơn giản như Linear Regression, Logistic Regression, Decision Tree để có điểm tham chiếu.
+  * Tối ưu siêu tham số (Hyperparameter Tuning): Sử dụng Grid Search hoặc Bayesian Optimization trên tập Validation để tìm ra bộ tham số tốt nhất cho các mô hình phức tạp hơn (XGBoost, Random Forest, hoặc Fine-tune PhoBERT).  
+  Lưu ý: Không được chạm vào tập Test trong bước này.
+- Bước 7: Đánh giá độc lập & Phân tích sai số  
+  * Đánh giá mô hình cuối cùng trên tập Test (chưa từng thấy) để có các chỉ số khách quan: Accuracy, Precision, Recall, F1-Score, và ma trận nhầm lẫn (Confusion Matrix).
+  * Phân tích sai số (Error Analysis): Xem những trường hợp nào mô hình dự đoán sai. Ví dụ: OCR đọc sai tên sản phẩm dẫn đến phân loại sai; hoặc email viết tắt quá nhiều làm mất nghĩa.
+  * Vòng lặp cải tiến: Dựa trên phân tích sai số, quay lại Bước 4 (Làm sạch) để xử lý kỹ hơn những lỗi cụ thể đó, hoặc quay lại Bước 5 (Feature Engineering) để thêm đặc trưng mới. Quá trình này lặp lại cho đến khi đạt KPI đề ra.
+- Bước 8: Triển khai & Giám sát  
+  * Triển khai: Đóng gói pipeline (từ Bước 1 đến Bước 7) thành một dịch vụ API sử dụng FastAPI hoặc Flask. Người dùng có thể gửi file Excel/PDF/Email lên và nhận về kết quả phân tích.
+  * Giám sát thực tế 
+    * Theo dõi Data Drift: Kiểm tra xem phân phối dữ liệu đầu vào (ví dụ: giá trị đơn hàng, độ dài email) có thay đổi theo thời gian không. Nếu có, mô hình sẽ kém chính xác.
+    * Theo dõi Concept Drift: Quan hệ giữa đầu vào và đầu ra có thay đổi không.
+    * Theo dõi hiệu năng (latency, thời gian phản hồi) và độ chính xác dự đoán thực tế.
+
+
