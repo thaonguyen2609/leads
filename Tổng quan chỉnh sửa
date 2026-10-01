@@ -1,1 +1,220 @@
+==============================================================================
+  📄 SHEET: Chủ nhật
+==============================================================================
+  Kích thước: 101 dòng × 17 cột
+  Ô gộp (merged cells): 16 vùng
 
+  📋 SỐ BẢNG PHÁT HIỆN: 5
+
+  ── Bảng 1: Bữa Sáng 20.000Đ a
+     • Dòng tiêu đề: 2
+     • Dòng header : 3
+     • Số dòng DỮ LIỆU  : 8
+     • Số dòng TỔNG KẾT : 5
+        → Dòng bị coi là tổng kết: 12, 13, 14, 15, 16
+     • Profile: max_filled=9, typical_density=6.3
+     • Vùng kiểm tra: cột A → cột J
+
+  ── Bảng 2: CHIẾT TÍNH THỰC ĐƠN CA Trưa 40.000đ
+     • Dòng tiêu đề: 18
+     • Dòng header : 19
+     • Số dòng DỮ LIỆU  : 15
+     • Số dòng TỔNG KẾT : 5
+        → Dòng bị coi là tổng kết: 35, 36, 37, 38, 39
+     • Profile: max_filled=9, typical_density=6.8
+     • Vùng kiểm tra: cột A → cột J
+
+  ── Bảng 3: THỰC ĐƠN CA Chiều 40.000Đ
+     • Dòng tiêu đề: 41
+     • Dòng header : 42
+     • Số dòng DỮ LIỆU  : 14
+     • Số dòng TỔNG KẾT : 5
+        → Dòng bị coi là tổng kết: 57, 58, 59, 60, 61
+     • Profile: max_filled=10, typical_density=7.6
+     • Vùng kiểm tra: cột A → cột J
+
+  ── Bảng 4: THỰC ĐƠN 40K THỰC ĐƠN 40K
+     • Dòng tiêu đề: 63
+     • Dòng header : 64
+     • Số dòng DỮ LIỆU  : 10
+     • Số dòng TỔNG KẾT : 5
+        → Dòng bị coi là tổng kết: 75, 76, 77, 78, 79
+     • Profile: max_filled=10, typical_density=6.8
+     • Vùng kiểm tra: cột A → cột J
+
+  ── Bảng 5: THỰC ĐƠN 30K THỰC ĐƠN 30K
+     • Dòng tiêu đề: 85
+     • Dòng header : 86
+     • Số dòng DỮ LIỆU  : 9
+     • Số dòng TỔNG KẾT : 5
+        → Dòng bị coi là tổng kết: 96, 97, 98, 99, 100
+     • Profile: max_filled=9, typical_density=6.7
+     • Vùng kiểm tra: cột A → cột J
+
+  ⚠️  VẤN ĐỀ DỮ LIỆU: 64 ô
+
+     [KHUYẾT] – 58 ô
+        · Dòng 4, cột A
+        · Dòng 5, cột A
+        · Dòng 6, cột A
+        · Dòng 7, cột A
+        · Dòng 8, cột A
+        · Dòng 9, cột A
+        · Dòng 10, cột A
+        · Dòng 11, cột A
+        · Dòng 20, cột A
+        · Dòng 21, cột A
+        · Dòng 22, cột A
+        · Dòng 23, cột A
+        · Dòng 23, cột D
+        · Dòng 24, cột A
+        · Dòng 25, cột A
+        · Dòng 26, cột A
+        · Dòng 26, cột D
+        · Dòng 27, cột A
+        · Dòng 28, cột A
+        · Dòng 28, cột C
+        · Dòng 29, cột A
+        · Dòng 29, cột C
+        · Dòng 30, cột A
+        · Dòng 31, cột A
+        · Dòng 32, cột A
+        · Dòng 33, cột A
+        · Dòng 34, cột A
+        · Dòng 34, cột C
+        · Dòng 34, cột H
+        · Dòng 34, cột I
+        · Dòng 34, cột J
+        · Dòng 47, cột A
+        · Dòng 48, cột A
+        · Dòng 49, cột A
+        · Dòng 51, cột A
+        · Dòng 52, cột A
+        · Dòng 53, cột A
+        · Dòng 54, cột A
+        · Dòng 55, cột A
+        · Dòng 56, cột A
+        · Dòng 65, cột A
+        · Dòng 66, cột A
+        · Dòng 67, cột A
+        · Dòng 68, cột A
+        · Dòng 69, cột A
+        · Dòng 70, cột A
+        · Dòng 71, cột A
+        · Dòng 72, cột A
+        · Dòng 73, cột A
+        · Dòng 87, cột A
+        ... và 8 ô khác
+
+     [N/A] – 6 ô
+        · Dòng 10, cột C: #N/A  ← công thức: =VLOOKUP(D10,'Báo giá'!B:L,11,0)
+        · Dòng 10, cột H: #N/A  ← công thức: =VLOOKUP(D10,'Báo giá'!B:H,7,0)
+        · Dòng 23, cột C: #N/A  ← công thức: =VLOOKUP(D23,'Báo giá'!B:L,11,0)
+        · Dòng 23, cột H: #N/A  ← công thức: =VLOOKUP(D23,'Báo giá'!B:H,7,0)
+        · Dòng 26, cột C: #N/A  ← công thức: =VLOOKUP(D26,'Báo giá'!B:L,11,0)
+        · Dòng 26, cột H: #N/A  ← công thức: =VLOOKUP(D26,'Báo giá'!B:H,7,0)
+
+     [CÔNG THỨC CHƯA TÍNH] – 6 ô
+        · Dòng 10, cột I: =IFERROR(E10*H10/1000,"")
+        · Dòng 10, cột J: =I10
+        · Dòng 23, cột I: =IFERROR(E23*H23/1000,"")
+        · Dòng 23, cột J: =I23
+        · Dòng 26, cột I: =IFERROR(E26*H26/1000,"")
+        · Dòng 26, cột J: =I26
+
+     [CÔNG THỨC = 0] – 41 ô
+        · Dòng 4, cột C → giá trị = 0
+        · Dòng 5, cột C → giá trị = 0
+        · Dòng 8, cột C → giá trị = 0
+        · Dòng 9, cột C → giá trị = 0
+        · Dòng 11, cột C → giá trị = 0
+        · Dòng 20, cột C → giá trị = 0
+        · Dòng 21, cột C → giá trị = 0
+        · Dòng 22, cột C → giá trị = 0
+        · Dòng 24, cột C → giá trị = 0
+        · Dòng 25, cột C → giá trị = 0
+        · Dòng 27, cột C → giá trị = 0
+        · Dòng 30, cột C → giá trị = 0
+        · Dòng 32, cột C → giá trị = 0
+        · Dòng 33, cột C → giá trị = 0
+        · Dòng 43, cột C → giá trị = 0
+        · Dòng 44, cột C → giá trị = 0
+        · Dòng 45, cột C → giá trị = 0
+        · Dòng 46, cột C → giá trị = 0
+        · Dòng 47, cột C → giá trị = 0
+        · Dòng 48, cột C → giá trị = 0
+        · Dòng 49, cột C → giá trị = 0
+        · Dòng 50, cột C → giá trị = 0
+        · Dòng 51, cột C → giá trị = 0
+        · Dòng 52, cột C → giá trị = 0
+        · Dòng 53, cột C → giá trị = 0
+        · Dòng 54, cột C → giá trị = 0
+        · Dòng 56, cột C → giá trị = 0
+        · Dòng 66, cột C → giá trị = 0
+        · Dòng 67, cột C → giá trị = 0
+        · Dòng 68, cột C → giá trị = 0
+        · Dòng 69, cột C → giá trị = 0
+        · Dòng 70, cột C → giá trị = 0
+        · Dòng 71, cột C → giá trị = 0
+        · Dòng 72, cột C → giá trị = 0
+        · Dòng 88, cột C → giá trị = 0
+        · Dòng 89, cột C → giá trị = 0
+        · Dòng 90, cột C → giá trị = 0
+        · Dòng 91, cột C → giá trị = 0
+        · Dòng 92, cột C → giá trị = 0
+        · Dòng 93, cột C → giá trị = 0
+        · Dòng 94, cột C → giá trị = 0
+=================================================================
+🔧 XỬ LÝ SHEET: Chủ nhật
+=================================================================
+  📌 Header ở dòng 3
+  📌 Cột: NL=4, ĐG=8, MH=3
+  🎯 Phase 1 cung cấp 56 dòng DỮ LIỆU (bỏ qua 25 dòng TỔNG KẾT)
+
+  🔹 BƯỚC 1: Khớp chính xác (Nguyên liệu + Đơn giá)
+     ✓ Khớp chính xác             : 49 dòng
+     ⊘ Đủ NL+ĐG nhưng không khớp  : 3 dòng → ĐỂ TRỐNG
+     ↳ Chuyển sang Bước 2 (thiếu ĐG): 2 dòng
+        • Do công thức chưa resolve : 1
+        • Do đơn giá trống thật     : 1
+
+     📌 Danh sách dòng ĐỦ NL+ĐG nhưng KHÔNG có trong Báo giá (đã để trống mã):
+        - Dòng 33: NL='Thạch Long Hải 95g* 100 cốc/thùng' | ĐG='35000'
+        - Dòng 50: NL='Chả cá thì là' | ĐG='11000'
+        - Dòng 51: NL='cà chua to' | ĐG='11000'
+
+  🔹 BƯỚC 2: Xử lý 2 dòng thiếu Đơn giá
+     📌 Danh sách dòng thiếu ĐG:
+        - Dòng 10: NL='Sữa fami' | ĐG='#N/A' | công thức chưa resolve
+        - Dòng 34: NL='Quả cam' | ĐG='None' | đơn giá trống
+        ✗ Dòng 10: Không có NL 'Sữa fami' trong Báo giá → trống
+        ✓ Dòng 34: Gán 'NLQ0006' | Giá thấp nhất = 18000.0
+     → Cập nhật giá thấp nhất : 1
+     → Để trống mã hàng       : 1
+
+  🔹 BƯỚC 3: Dòng có NL trống nhưng ≥2 ô khác có giá trị
+     ⚠️ Có 17 dòng cần kiểm tra:
+        - Dòng 12 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Gia vị', 'Tổng': 800}
+        - Dòng 15 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Tổng chi phí TĐ 1', 'Tổng': 7132}
+        - Dòng 16 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Cost TĐ 1', 'Tổng': 0.3566}
+        - Dòng 23 [DATA (bất thường!)]: {'Món ăn': 'Trứng sốt thịt', 'Mã hàng': "[CT] =VLOOKUP(D23,'Báo giá'!B:L,11,0)", 'Định lượng sống': 65, 'Số suất': 1250, 'Gọi hàng': 81.25, 'Đơn giá': "[CT] =VLOOKUP(D23,'Báo giá'!B:H,7,0)", 'Thành tiền': '[CT] =IFERROR(E23*H23/1000,"")', 'Tổng': '[CT] =I23'}
+        - Dòng 26 [DATA (bất thường!)]: {'Mã hàng': "[CT] =VLOOKUP(D26,'Báo giá'!B:L,11,0)", 'Định lượng sống': 1, 'Số suất': 1250, 'Gọi hàng': 1.25, 'Đơn giá': "[CT] =VLOOKUP(D26,'Báo giá'!B:H,7,0)", 'Thành tiền': '[CT] =IFERROR(E26*H26/1000,"")', 'Tổng': '[CT] =I26'}
+        - Dòng 35 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Gia vị', 'Tổng': 1600}
+        - Dòng 38 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Tổng chi phí TĐ 1', 'Tổng': 64484}
+        - Dòng 39 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Cost TĐ 1', 'Tổng': 1.6121}
+        - Dòng 57 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Gia vị', 'Tổng': 1600}
+        - Dòng 60 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Tổng chi phí TĐ 1', 'Tổng': 32754}
+        - Dòng 61 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Cost TĐ 1', 'Tổng': 0.81885}
+        - Dòng 75 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Gia vị', 'Tổng': 1600}
+        - Dòng 78 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Tổng chi phí TĐ 1', 'Tổng': 27216}
+        - Dòng 79 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Cost TĐ 1', 'Tổng': 0.6804}
+        - Dòng 96 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Gia vị', 'Tổng': 1600}
+        - Dòng 99 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Tổng chi phí TĐ 1', 'Tổng': 21242}
+        - Dòng 100 [SUMMARY (Phase 1 bỏ qua)]: {'Cơ cấu': 'Cost TĐ 1', 'Tổng': 0.7080666666666666}
+
+  📄 SHEET: Chủ nhật
+     • Số dòng đã xóa             : 2
+     • Merged cells re-tạo OK     : 16
+     • Công thức đã điều chỉnh    : 137 ô
+        · Dòng 23
+        · Dòng 26
